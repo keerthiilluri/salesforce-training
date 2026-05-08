@@ -6,11 +6,10 @@
  3:  Account: Represents the company or consumer that business is doingwith.
      Contact: A person associated with account.
      Oppurtunity: A sales transaction that is in progress.
+     Lead: A person/organisation who shows interest in a product but not yet confirmed as a customer. 
 
-REAL WORLD MAPPING:
-   Imagine a software company, CloudTech Inc., selling their software to Global Services Ltd
-   The CompanyAccount"Global Services Ltd" is created as an Account record.
-   The EmployeeContact"Jane Smith", the Procurement Director at Global Services, is created as a Contact and linked to the Account.
-   The Project/DealOpportunityCloudTech is pitching a $50,000 yearly subscription. This is an Opportunity named "Global Services - 2026 Deal," linked to the Account and Contact.
-   The NegotiationStagesThe Opportunity moves through stages: Proposal -> Negotiation -> Closed/Won.
-    The SupportCaseAfter the sale, if Jane Smith emails about a login issue, a Case is created, linked to her Contact record.
+REAL WORLD MAPPING: College Admission
+  Account: College/University
+  Contact: Student
+  Lead: Student who asks for information but not yet joined
+  Oppurtunity: Admission process/seat enrollment
