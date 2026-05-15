@@ -1,0 +1,24 @@
+Q: How CRM concepts(Account,contact,opportunity) fit into salesforce platform(objects,apps) in salesforces
+Ans: An object is like a database table used to store information(simply say table provided with all information)
+Example: CRM-CONCEPT       SALESFORCE-OBJECT           STORES
+           Account           Account object          Company details
+           Contact           Contact object       customer/person details
+          Opportunity      Opportunity object     Sales/deal information
+Real-Time Example
+Suppose a software company sells laptops then
+ company is an account
+ manager is a contact
+ laptop purchase deal is an opportunity
+ -->One account can have many contacts
+ -->One account can have many opportunities
+
+ Apps: An app on salesforce is a collection of related objects,tabs and tools used for business purpose.
+ Example: sales app for managing sales
+          service app for customer support
+          marketing app for promotions
+ -->Inside the sales app users works with accounts,contacts,opportunities,leads,reports
+   The app provides the interface to manage CRM data stored in objects.
+   The step by step process is as follows:
+    step 1 -create an account
+    step 2-Add contact
+    step 3-create opportuinty
