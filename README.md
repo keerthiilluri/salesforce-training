@@ -41,4 +41,13 @@ Phase-2: Salesforce Platform:
            It provides the user interface for viewing records.
          Example: If student object is created then salesforce can create student tab
                   when user clicks the student tab; they can view students,add new studenrs and can edit student records.
+
+Configuration and Coding: 
+                   Configuration uses built-in "point and click" tools,while coding involves writing custom program logic using languages like Apex.
+   Configuration examples:
+           1.Creating custom object: Creating student object to store student details.
+           2.Creating validation rules: Making the phone number field mandatory before saving a record.
+   Coding examples:
+           1.Apex trigger: Automatically sending an email when new contact is created.
+           2.Lightnig Web component(LWC): Building a custom student dashboard with buttons and chart.
          
