@@ -50,4 +50,22 @@ Configuration and Coding:
    Coding examples:
            1.Apex trigger: Automatically sending an email when new contact is created.
            2.Lightnig Web component(LWC): Building a custom student dashboard with buttons and chart.
-         
+
+  System design of college management:
+      App Name: Campus Connect
+      Objects:
+      ->Student Object(Std name,roll no. , branch,year,phone number)
+      ->Faculty Object(Faculty name,Department,Subject,Email)
+      ->Course Object(Course name,Course codes,credits)
+      ->Attendance Object(Std name,subject,Attendance percentagetage)
+      ->Fee Object(Std name,Total fee,paid amount,due amount)
+
+  User Interaction Flow:
+        College management App
+                 |
+        Objects:
+        Student->Faculty->Course->Attendance->Fee
+                 |
+         Users interact through tabs
+                 |
+         Data stored in salesforce database        
