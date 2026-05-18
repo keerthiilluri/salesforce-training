@@ -1,4 +1,5 @@
 salesforce-training
+
  Phase-1: 1:  CRM-Customer Relationship Management
     Designed to manage company's relationships between the current and potential customers
  2:  Why companies use salesforce?
