@@ -1,6 +1,6 @@
 # salesforce-training
  Phase-1: 1:  CRM-Customer Relationship Management
-      Designed to manage company's relationships between the current and potential customers
+    Designed to manage company's relationships between the current and potential customers
  2:  Why companies use salesforce?
      To manage sales,service,marketing and many more on one platform rather than using disconnected systems.
      to reduce time efficiency etc
@@ -13,8 +13,8 @@ REAL WORLD MAPPING:
       Lead: Person interested in opening account/loan
       Contact: Account holder in the bank
       Oppurtunity: Loan or credit application
-    
-Phase-2: Salesforce Platform:
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+   Phase-2: Salesforce Platform:
          It is a cloud based platform used to build CRM application and business applications without needing  heavy infrastructure setup
          It helps companies:
          ->store customer and business data
@@ -68,4 +68,11 @@ Configuration and Coding:
                  |
          Users interact through tabs
                  |
-         Data stored in salesforce database        
+         Data stored in salesforce database    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Phase 3: *Difference between App,object,record and field:*
+        **App**                    |          **object**       |          **Record**        |              **Field**
+It is a collection of related      |   A database that stores  |   A single row/data entry  |   A column/attribute that stores the 
+tabs,objects and tools used for    |        the data.          |     inside an object.      |       specific information in a reocrd. 
+specific purpose.                  |                           |                            |
+          
