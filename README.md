@@ -76,4 +76,18 @@ Phase 3: *Difference between App,object,record and field:*
 It is a collection of related      |   A database that stores  |   A single row/data entry  |   A column/attribute that stores the 
 tabs,objects and tools used for    |        the data.          |     inside an object.      |       specific information in a reocrd. 
 specific purpose.                  |                           |                            |
-          
+ Real life Example:
+    App:College Management App
+    Object: Student Object
+    Record:Ravi's data(from the above example of object)
+    Field:Std name,roll no,branch
+Standard objects vs Custom objects:
+                **Standard Objects**                                  |                              **Custom Objects**
+    1.These are pre-built and provided by the salesforce.             |                 1.Here objects are created by users according to their
+                                                                      |                          business requirements.
+    2.The customization of these objects are limited.                 |                 2.These objects are fully customizable.
+    3.The naming of these objects are normal.                         |                 3.These names end with _c.
+    4.Examples:Account,contact,opportunity,Lead                       |                 4.Student,Library,Hostel,Attendance etc
+                                                                      |
+
+                                                                      
