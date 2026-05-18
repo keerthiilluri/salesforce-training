@@ -1,4 +1,4 @@
-salesforce-training
+#salesforce-training
 
  Phase-1: 1:  CRM-Customer Relationship Management
     Designed to manage company's relationships between the current and potential customers
@@ -71,7 +71,7 @@ Configuration and Coding:
                  |
          Data stored in salesforce database    
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Phase 3: *Difference between App,object,record and field:*
+Phase 3:a) *Difference between App,object,record and field:*
         **App**                    |          **object**       |          **Record**        |              **Field**
 It is a collection of related      |   A database that stores  |   A single row/data entry  |   A column/attribute that stores the 
 tabs,objects and tools used for    |        the data.          |     inside an object.      |       specific information in a reocrd. 
@@ -81,7 +81,7 @@ specific purpose.                  |                           |                
     Object: Student Object
     Record:Ravi's data(from the above example of object)
     Field:Std name,roll no,branch
-Standard objects vs Custom objects:
+b)Standard objects vs Custom objects:
                 **Standard Objects**                                  |                              **Custom Objects**
     1.These are pre-built and provided by the salesforce.             |                 1.Here objects are created by users according to their
                                                                       |                          business requirements.
@@ -89,5 +89,25 @@ Standard objects vs Custom objects:
     3.The naming of these objects are normal.                         |                 3.These names end with _c.
     4.Examples:Account,contact,opportunity,Lead                       |                 4.Student,Library,Hostel,Attendance etc
                                                                       |
-
-                                                                      
+c) College data Model:
+   a)Objects: Student obj(Stores std details)
+              Faculty obj(Stores faculty ingormation)
+              course obj(Stores course details)
+              Department obj(Stores department datails)
+              Enrollment obj(Connects stds and courses)
+     -->These objects are custom objects which were created by the users.
+  b) Relationships:
+      **Parent object**              |            **Child object**                  |              **Relationship type**
+      Department->Faculty            |           Lookup/Master detail               |           One department has many faculty
+      Department->Course             |            Lookup/master detail              |           One department has many courses
+      Student->Enrollment            |               Master detail                  |         One student can enroll many courses                                         Course->Enrollment            |               Master detail                  |       One course can have many std enrollments
+   c)*college Data Model Diagram*:
+                                             Department                                         **Explanation**:
+                                                 |                                                ->Department manages faculty and courses.
+                                  --------------------------------------                          ->Students enroll in courses through enrollment object.
+                                  |                                    |                          ->Enrollment acts as  a junction object between student and 
+                               Faculty                               Course                          course.
+                                                                       |
+                                                                    Enrollment
+                                                                       |
+                                                                     Student   
