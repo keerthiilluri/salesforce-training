@@ -14,6 +14,7 @@ REAL WORLD MAPPING:
       Lead: Person interested in opening account/loan
       Contact: Account holder in the bank
       Oppurtunity: Loan or credit application
+ 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- 
    Phase-2: Salesforce Platform:
          It is a cloud based platform used to build CRM application and business applications without needing  heavy infrastructure setup
@@ -70,12 +71,14 @@ Configuration and Coding:
          Users interact through tabs
                  |
          Data stored in salesforce database    
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Phase 3:a) *Difference between App,object,record and field:*
         **App**                    |          **object**       |          **Record**        |              **Field**
 It is a collection of related      |   A database that stores  |   A single row/data entry  |   A column/attribute that stores the 
 tabs,objects and tools used for    |        the data.          |     inside an object.      |       specific information in a reocrd. 
 specific purpose.                  |                           |                            |
+ 
  Real life Example:
     App:College Management App
     Object: Student Object
@@ -102,6 +105,7 @@ c) College data Model:
       Department->Course             |            Lookup/master detail              |           One department has many courses
       Student->Enrollment            |               Master detail                  |         One student can enroll many courses                                         Course->Enrollment            |               Master detail                  |       One course can have many std enrollments
    c)*college Data Model Diagram*:
+   
                                              Department                                         **Explanation**:
                                                  |                                                ->Department manages faculty and courses.
                                   --------------------------------------                          ->Students enroll in courses through enrollment object.
@@ -110,15 +114,42 @@ c) College data Model:
                                                                        |
                                                                     Enrollment
                                                                        |
-                                                                     Student   
+                                                                     Student 
+                                                                     
 d)Formula Fields:
     A formula field automatically calculates values using formulas.
     Example:1) Student Full name: Fields could be first_name and last_name          2)Percentage calculation field:Marks_obtained and total_marks
          If name is ravi kumar then first_name is ravi and last_name is kumar.         Formula:(marks_obtained/total_marks)*100
     formula: first_name & " "& Last_name.(Combines two fields automtically) 
+
 e)Validation rules:
      Validation rules prevent users from entering incorrect data.
      Example:1)Marks cannot exceed total marks
              2)Email cannot be empty.
+
 f)Why structured enterprise data matters?
    Structured enterprise data is very important in salesforce because it helps organizations store,manage and analyze information properly. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Phase 4: 
+a)Flow Builder: It is a point and click automation tool in salesforce used to automate business processes without writing code.
+  It help users:
+  ->collect data                                                              ->create approval processes 
+  ->guide users through screens                                               ->send emails/notifications
+  ->Update record automatically
+
+b)Types of flows:
+  a)Screen flow: Screen flow is a flow that interacts with users through screens.
+    It mainly used when:
+    ->users need to enter data.     ->users need guidance steo by step.   ->forms or wizards are required.
+    Ex:College admission form
+    Uses: surveys,registration forms,complaint forms etc
+  b)Record-triggered flow:A record triggered flow runs automatically when a record is: created,updated,deleted.
+    ->no user interaction is required.
+    Ex: when a new student record is created:
+       ->send welcome email automatically   ->assign mentor automatically  ->update admission status
+    Uses: auto-update fields,send notifications,create related reocrds,approval automation,status updates.
+  c)Automation ideas:
+      1)Student admission automation
+    
+  
