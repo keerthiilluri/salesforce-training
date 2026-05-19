@@ -111,3 +111,14 @@ c) College data Model:
                                                                     Enrollment
                                                                        |
                                                                      Student   
+d)Formula Fields:
+    A formula field automatically calculates values using formulas.
+    Example:1) Student Full name: Fields could be first_name and last_name          2)Percentage calculation field:Marks_obtained and total_marks
+         If name is ravi kumar then first_name is ravi and last_name is kumar.         Formula:(marks_obtained/total_marks)*100
+    formula: first_name & " "& Last_name.(Combines two fields automtically) 
+e)Validation rules:
+     Validation rules prevent users from entering incorrect data.
+     Example:1)Marks cannot exceed total marks
+             2)Email cannot be empty.
+f)Why structured enterprise data matters?
+   Structured enterprise data is very important in salesforce because it helps organizations store,manage and analyze information properly. 
