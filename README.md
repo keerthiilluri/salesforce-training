@@ -165,7 +165,7 @@ b)Types of flows:
       5)Fee payment status automation(record triggered flow)
         when a students pays college fee: update records,send email notification, create receipt record
          
-   d)Flow diagram:
+   d)                                                  Flow diagram:
              <img width="500" height="500" alt="flow diagram" src="https://github.com/user-attachments/assets/efbf5f52-019c-4679-870e-f6d0e113b804" />
 
             
