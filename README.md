@@ -151,5 +151,40 @@ b)Types of flows:
     Uses: auto-update fields,send notifications,create related reocrds,approval automation,status updates.
   c)Automation ideas:
       1)Student admission automation
-    
-  
+         when a student application is submitted: create student record,send confirmation email,assign department automatically
+         Flow type: Record triggered flow
+      2)Library book issue system:
+         A librarian enters student ID and book details through screens(screen flow)
+         The flow: checks availability,updates issue status,sets return date
+      3)Attendance alert system
+        If attendance goes below 75: send warning email to student, notify class mentor
+        Flow type: record-triggered flow
+      4)Hostel room allocation(screen flow)
+       Student selects hostel preferences using screens
+       ->checks available rooms,allocate room automatically,sends hostel confirmation
+      5)Fee payment status automation(record triggered flow)
+        when a students pays college fee: update records,send email notification, create receipt record
+         
+   d)Flow diagram:(<img width="1024" height="1536" alt="flow diagram" src="https://github.com/user-attachments/assets/efbf5f52-019c-4679-870e-f6d0e113b804" />)
+
+            
+                                             Student Applies
+                                                   ↓
+                                        Admission Form Submitted
+                                                   ↓
+                                       Record Created in Salesforce                                    
+                                                   ↓
+                                             Eligibility Check
+                                                   ↓
+                                            ┌───────────────┐
+                                            │   Eligible?   │
+                                            └──────┬────────┘
+                                                   │Yes
+                                                   ↓
+                                              Seat Allocation
+                                                   ↓
+                                                Fee Payment
+                                                   ↓
+                                           Admission Confirmed
+                                                   ↓
+                                         Confirmation Email Sent
