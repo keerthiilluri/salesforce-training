@@ -167,6 +167,26 @@ b)Types of flows:
          
    d)                                                  Flow diagram:
              <img width="500" height="500" alt="flow diagram" src="https://github.com/user-attachments/assets/efbf5f52-019c-4679-870e-f6d0e113b804" />
-
-            
-                                         
+   e) Manual process: It relies on human effort and judgement to execute tasks,offering high flexibility but slower speeds.
+     Automated process: An automated process uses technology and software scripts to execute workflows without human intervention
+            <img width="400" height="400" alt="man and auto" src="https://github.com/user-attachments/assets/42c920e5-64b2-4bf3-8652-37c23c2eb618" />
+   f)Why automation matters in enterprise systems?
+     Automation is very important in enterprise systems because it improves efficiency, accuracy, and speed. In organizations like colleges and companies, many          repetitive tasks are performed every day. Automation reduces manual work and saves time for employees.
+       Using Salesforce Flows:
+        ->Data can be processed automatically
+        ->Errors are reduced
+        ->Notifications and emails are sent instantly
+        ->Records are updated in real time
+        ->Employees can focus on important tasks instead of repetitive work
+        For example, in a college admission system, automation helps students receive faster responses and improves the overall admission process. Enterprise              automation also increases productivity and provides a better user experience.
+   
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------    Phase 5: 
+   Apex: Apex is a programming language developed by Salesforce that is used to add custom business logic in Salesforce applications.
+         It is similar to Java and is mainly used when Salesforce configuration tools (like Flow or Validation Rules) are not enough.
+         Using Apex, developers can:
+         ->Automate complex processes
+         ->Create custom calculations
+         ->Integrate external systems
+         ->Write triggers and classes
+         ->Perform advanced validations
+         Example: When a student’s fee payment is completed, Apex can automatically generate a receipt and send an email notification.
