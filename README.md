@@ -168,22 +168,7 @@ b)Types of flows:
    d)Flow diagram:(<img width="1024" height="1536" alt="flow diagram" src="https://github.com/user-attachments/assets/efbf5f52-019c-4679-870e-f6d0e113b804" />)
 
             
-                                             Student Applies
-                                                   ↓
-                                        Admission Form Submitted
-                                                   ↓
-                                       Record Created in Salesforce                                    
-                                                   ↓
-                                             Eligibility Check
-                                                   ↓
-                                            ┌───────────────┐
-                                            │   Eligible?   │
-                                            └──────┬────────┘
-                                                   │Yes
-                                                   ↓
-                                              Seat Allocation
-                                                   ↓
-                                                Fee Payment
+                                          
                                                    ↓
                                            Admission Confirmed
                                                    ↓
