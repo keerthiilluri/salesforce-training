@@ -190,3 +190,40 @@ b)Types of flows:
          ->Write triggers and classes
          ->Perform advanced validations
          Example: When a student’s fee payment is completed, Apex can automatically generate a receipt and send an email notification.
+
+   Flow vs Apex:
+           Feature             | Flow              | Apex                             
+          -------------------  | ----------------- | -------------------------------- 
+           Type                | Declarative Tool  | Programming Language             
+           Coding Required     | No                | Yes                              
+           Easy for Admins     | Yes               | No                               
+           Complexity Handling | Medium            | High                             
+           Best For            | Simple automation | Complex business logic           
+           Maintenance         | Easier            | Requires developer               
+           Example             | Auto email alerts | Integration with payment gateway 
+   Configuration vs Coding:
+             Configuration                  | Coding                  
+            ------------------------------  | ----------------------- 
+             Uses clicks not code           | Uses programming        
+             Faster development             | More flexible           
+             Easy maintenance               | Requires developers     
+             Used for simple tasks          | Used for advanced logic 
+             Example: Flow, Validation Rule | Example: Apex Trigger   
+     Real Examples Where Apex Is Needed
+     Example 1: Automatic Fee Receipt Generation
+                When a student pays fees:
+               ->Apex creates a PDF receipt
+               ->Sends receipt email automatically
+    Example 2: External Payment Gateway Integration
+           College system connects with:
+           Razorpay
+            Paytm
+            Apex is used to:
+           ->Send payment request
+           ->Receive payment status
+           ->Update student records
+    Example 3: Attendance Warning System
+               If attendance falls below 75%:
+               ->Apex checks attendance weekly
+               ->Sends warning email to students and parents
+               ->Updates student status automatically
