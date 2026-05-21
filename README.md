@@ -227,3 +227,83 @@ b)Types of flows:
                ->Apex checks attendance weekly
                ->Sends warning email to students and parents
                ->Updates student status automatically
+              
+   Integrated College Management System Design:
+             Overview
+             The College Management System in Salesforce helps manage:
+              ->Admissions
+              ->Student records
+              ->Fees
+              ->Attendance
+              ->Courses
+              ->Faculty information
+          -->CRM in College Management
+             CRM helps maintain relationships with:
+              ->Students
+              ->Parents
+              ->Faculty
+              ->Alumni
+      Example:
+           A student inquiry becomes an admission opportunity.
+ Objects used:
+          | Object     | Purpose                   |
+          | ---------- | ------------------------- |
+          | Student    | Stores student details    |
+          | Course     | Stores course information |
+          | Faculty    | Faculty records           |
+          | Attendance | Tracks attendance         |
+          | Fees       | Stores payment details    |
+          | Admission  | Admission process details |
+Relationships:
+          | Relationship         | Type        |
+          | -------------------- | ----------- |
+          | Student → Course     | Many-to-One |
+          | Course → Faculty     | Many-to-One |
+          | Student → Attendance | One-to-Many |
+          | Student → Fees       | One-to-Many |
+Validation Rules
+               Examples:
+                ->Phone number must contain 10 digits
+                ->Attendance cannot exceed 100%
+                ->Fee amount cannot be negative
+                ->Email must contain “@”
+        Example:Attendance__c > 100
+Flow Automation
+        Record Triggered Flow 
+            When admission status becomes “Approved”:
+            ->Student record is created automatically
+            ->Welcome email is sent
+            ->Fee record is generated
+            ->Screen Flow
+        Students can:
+            ->Submit admission forms
+            ->View fee details
+            ->Update profile information
+            ->Apex Usage in the System
+  Apex Trigger:
+          When fee payment is completed:
+           ->Receipt generated automatically
+           ->Student payment status updated
+  Apex Integration:
+         Connects Salesforce with:
+         ->Payment gateways
+         ->SMS services
+         ->University portals      
+
+System work flow:
+
+                                                  Student Applies
+                                                         ↓
+                                                Admission Record Created
+                                                         ↓
+                                               Validation Rules Check Data
+                                                         ↓
+                                            Flow Automates Admission Process
+                                                         ↓
+                                              Apex Handles Complex Logic
+                                                         ↓
+                                                Student Record Generated
+                                                         ↓
+                                               Fees and Attendance Managed
+                                                         ↓
+                                             Reports and Notifications Sent
