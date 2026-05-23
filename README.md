@@ -307,3 +307,68 @@ System work flow:
                                                Fees and Attendance Managed
                                                          ↓
                                              Reports and Notifications Sent
+Pseudocode examples:
+  Ex-1: Student Admission Approval:
+                        START 
+                         IF student_marks >= 75 THEN
+                           Display "Admission Approved"
+                         ELSE
+                            Display "Admission Pending Review"
+                        END IF
+                        STOP
+Ex-2: Automatic fee reminder:
+                START
+           FOR each student
+              IF fee_status = "Pending" THEN
+                  Send reminder email
+              END IF
+           END FOR
+           STOP
+Ex-3: Attendance warning system:
+                START
+                IF attendance_percentage < 75 THEN
+                   Create warning message
+                   Notify student
+                END IF
+Why Enterprise Systems Eventually Need Programming?
+   Enterprise systems like college management systems, banking systems, hospital systems, and CRM platforms initially use configuration tools because they are        fast and easy to build. Features like objects, fields, validation rules, and flows help automate many business processes without coding.
+
+   However, as organizations grow, their requirements become more complex. Simple configuration is often not enough to handle advanced business logic, integrations, calculations, and large-scale automation. At this stage, programming becomes necessary.             
+  Programming languages like Apex in Salesforce help developers:
+  ->Build complex automation
+  ->Integrate external systems
+  ->Handle bulk data processing
+  ->Create custom business logic
+  ->Improve system flexibility and scalability
+For example, a college management system may later require:
+  ->Automatic scholarship calculation
+  ->Integration with payment gateways
+  ->Real-time notifications
+  ->Complex attendance analytics
+  ->Custom approval processes
+These advanced requirements cannot always be achieved using only configuration tools. Therefore, enterprise systems eventually need programming to become more powerful, intelligent, and scalable.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Phase 6: 
+  1.**SOQL**:
+  SOQL stands for Salesforce Object Query Language.
+    It is used to retrieve records from Salesforce objects, similar to how SQL is used in databases.
+    SOQL helps developers fetch data from objects like Account, Contact, Opportunity, Case, etc.
+    Example: SELECT Name, Email FROM Contact
+    -->This query retrieves the Name and Email fields from the Contact object.
+       **Uses of SOQL**:
+         ->Retrieve records from Salesforce
+         ->Filter data using conditions
+         ->Sort records
+         ->Access related object data
+         ->Use in Apex classes and triggers
+2.What is an Apex Trigger? 
+   An Apex Trigger is a piece of Apex code that automatically executes before or after events occur on Salesforce records.
+    Triggers help automate custom business logic when records are:
+     ->Inserted
+     ->Updated
+     ->Deleted
+     ->Restored         
+    It is used to retrieve records from Salesforce objects, similar to how SQL is used in databases.
+      SOQL helps developers fetch data from objects like Account, Contact, Opportunity, Case, etc.
+    Example  
