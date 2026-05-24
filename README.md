@@ -371,4 +371,101 @@ Phase 6:
      ->Restored         
     It is used to retrieve records from Salesforce objects, similar to how SQL is used in databases.
       SOQL helps developers fetch data from objects like Account, Contact, Opportunity, Case, etc.
-    Example  
+    Example:
+     trigger ContactTrigger on Contact (before insert) {
+    for(Contact con : Trigger.new) {
+        con.Description = 'New Contact Created';
+    }
+}
+    This trigger automatically sets a description before a Contact record is inserted.
+   -->Common Uses:
+   ->Validation
+   ->Automatic field updates
+   ->Sending notifications
+   ->Preventing incorrect data
+   ->Integrating with external systems
+ **Flow vs Trigger:**                                                                                    Example:
+    | Feature       | Flow                        | Trigger                        |                   Flow: Send email when case is created
+    | ------------- | --------------------------- | ------------------------------ |                   Trigger:Complex validation across multiple objects
+    | Type          | Declarative Tool (No Code)  | Programmatic Tool (Code)       |
+    | Language      | Drag-and-drop               | Apex                           |
+    | Complexity    | Simple to medium automation | Complex automation             |
+    | User Friendly | Easy for admins             | Requires programming knowledge |
+    | Performance   | Slower for heavy logic      | Faster for complex processing  |
+    | Maintenance   | Easier                      | Requires developers            |
+    | Best For      | Simple approvals, updates   | Advanced business logic        |
+    
+**Before trigger vs after trigger:**                                                                   -->Before trigger example:
+     | Feature                  | Before Trigger             | After Trigger           |                    before insert, before update
+     | ------------------------ | -------------------------- | ----------------------- |                     ->used for validation
+     | Runs                     | Before record is saved     | After record is saved   |                     ->updating field values before save
+     | Main Purpose             | Validate or modify data    | Work with saved records |                -->After trigger example:
+     | Can Change Field Values? | Yes                        | No                      |                     after insert, after update
+     | Record ID Available?     | Usually No (before insert) | Yes                     |                      used for:
+     | Faster?                  | Yes                        | Slightly slower         |                      ->sending emails, creating related records etc.
+Simple Real-Time Example:
+ **Before Trigger**
+    A company automatically sets:
+    Status = "New"
+    before saving a Case.
+**After Trigger**
+    After saving an Opportunity:
+    Send notification email
+    Create invoice record
+     Update related reports  
+
+4. Trigger Use Cases (5 Examples)
+    1. Automatic Welcome Email
+       When a new customer Contact is created in Salesforce, an Apex Trigger automatically sends a welcome email.
+    2. Update Account Status
+       When all Opportunities of an Account are closed successfully, the trigger automatically updates the Account status to “Active”.
+    3. Prevent Invalid Data
+       A trigger prevents users from saving employee records if the salary value is negative.
+    4. Create Follow-Up Task
+       When a high-priority Case is created, the trigger automatically creates a follow-up task for the support team.
+    5. Attendance Warning System
+       In a college management system, if a student’s attendance falls below 75%, the trigger automatically creates a warning notification.     
+5.Query Examples (Your English Query Ideas)
+   Example 1
+    ->Get all students whose attendance is below 75%
+   Example 2
+    ->Show all contacts created this month
+   Example 3
+    ->Find all opportunities with amount greater than 1 lakh
+   Example 4
+    ->Display all employees working in the HR department
+   Example 5
+    ->Retrieve all cases with status = Open
+   Example 6
+    ->Get customers from Hyderabad city
+   Example 7
+    ->Show all products that are out of stock
+6. Reflection
+Why Enterprise Systems React Automatically to Data Changes
+
+Enterprise systems are designed to handle large amounts of data and business processes efficiently. Manual monitoring of every change is difficult, time-consuming, and error-prone. Therefore, enterprise systems automatically react to data changes using automation tools like Flows and Apex Triggers.
+
+Whenever a record is created, updated, or deleted, the system can immediately perform related actions such as:
+
+Sending notifications
+Updating related records
+Validating data
+Creating tasks
+Triggering approvals
+Generating reports
+
+For example:
+
+In banking systems, transactions automatically update account balances.
+In hospital systems, patient status updates can notify doctors.
+In Salesforce CRM, creating a Case can automatically assign it to a support agent.
+
+Automatic reactions improve:
+
+Speed
+Accuracy
+Productivity
+Data consistency
+Customer experience
+
+Thus, enterprise systems use automation to ensure real-time processing and smooth business operations without depending completely on manual work.
