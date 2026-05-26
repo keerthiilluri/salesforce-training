@@ -678,7 +678,7 @@ Step 9: Monitoring and Maintenance
                 Property statistics                                         Search bar
                 Quick actions                                               Filter options
             -->Property Form Screen                                     -->Property Details Screen
-                Property Name                                               Full property information
+                Property Name                                              Full property information
                 Location                                                    Edit/delete buttons
        4.**Components breakdown**:
            In LWC, every UI part is a component.
@@ -720,7 +720,4 @@ Step 9: Monitoring and Maintenance
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------             
               
               
-              
-                Price
-                Owner Details
-Save Button
+           
