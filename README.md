@@ -362,7 +362,7 @@ Phase 6:
          ->Sort records
          ->Access related object data
          ->Use in Apex classes and triggers
-2.What is an Apex Trigger? 
+2.**What is an Apex Trigger?**
    An Apex Trigger is a piece of Apex code that automatically executes before or after events occur on Salesforce records.
     Triggers help automate custom business logic when records are:
      ->Inserted
@@ -650,4 +650,77 @@ Step 9: Monitoring and Maintenance
                   Automation, testing, and monitoring make enterprise systems more stable and trustworthy.   
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------  Phase 8:                
-     
+     1.**What is LWC?**   
+            Lightning Web Components (LWC) is a modern framework in Salesforce used to build fast and interactive user interfaces (UI) for Salesforce applications.
+              It is based on: 
+              HTML,JavaScript,CSS,Web Standards
+              LWC helps developers create reusable components like:
+              Forms,Buttons,Tables,Dashboards,Record pages
+               Example: A “Student Registration Form” in Salesforce can be created using LWC with:
+               Input fields,Save button,Validation messages,Dynamic updates
+     2.**Why Salesforce Uses LWC?**
+        Salesforce uses LWC because it is:
+        ->Faster
+           LWC uses modern browser technologies, so pages load quickly.
+        ->Reusable
+           One component can be reused in multiple pages.
+        ->Easy to Maintain
+           Code is separated into small components.
+        ->Better Performance
+           Works efficiently with Salesforce data.
+        ->Modern Development
+           Uses standard JavaScript instead of older proprietary frameworks.
+      3.**UI screen(examples)** 
+           Suppose you create a Property Management System in Salesforce.
+            Possible UI screens:
+            -->Home Screen                                             -->Property List Screen
+                Navigation menu                                             Table showing all properties
+                Property statistics                                         Search bar
+                Quick actions                                               Filter options
+            -->Property Form Screen                                     -->Property Details Screen
+                Property Name                                               Full property information
+                Location                                                    Edit/delete buttons
+       4.**Components breakdown**:
+           In LWC, every UI part is a component.
+              Example for Property Management App:
+               | Component    | Purpose                |
+               | ------------ | ---------------------- |
+               | propertyForm | Add/Edit property      |
+               | propertyList | Display all properties |
+               | propertyCard | Show one property      |
+               | searchBar    | Search properties      |
+               | navbar       | Navigation menu        |
+       5.**Frontend vs Backend Logic**
+           _Frontend Logic (Client Side)_
+           This is what users see and interact with.
+           Technologies:
+           HTML,CSS,JavaScript
+           Responsibilities:
+           Buttons,Forms,Validation,UI Design,User interactions
+           Example: When user clicks “Save”, JavaScript checks:Is Property Name empty?; Is Price valid?
+           _Backend Logic (Server Side)_
+             This handles data processing in Salesforce.
+             Technologies:
+             Apex,SOQL,Salesforce Database
+             Responsibilities:
+             Save records,Fetch records,Business logic,Security
+              Example: Apex code saves property data into Salesforce objects.
+        6. **Reflection**
+              Lightning Web Components make Salesforce applications:
+               Faster,Cleaner,Interactive,Easy to use
+                   LWC follows modern web development standards, which helps developers build professional enterprise applications efficiently.
+               By separating:
+                    UI components,Business logic,Database operations
+                     Salesforce applications become:
+              Scalable,Reusable,Maintainable
+                 LWC is important because modern enterprise systems require:
+                      Dynamic interfaces,Real-time updates,Better user experience,High performance
+              That is why LWC is now the preferred UI framework in Salesforce. 
+              
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------             
+              
+              
+              
+                Price
+                Owner Details
+Save Button
