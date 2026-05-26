@@ -649,7 +649,7 @@ Step 9: Monitoring and Maintenance
           -->Increase Reliability
                   Automation, testing, and monitoring make enterprise systems more stable and trustworthy.   
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------  Phase 8:                
+-------------------------------------------------------------------------------------------------------------------------------------------------------------- Phase 8:                
      1.**What is LWC?**   
             Lightning Web Components (LWC) is a modern framework in Salesforce used to build fast and interactive user interfaces (UI) for Salesforce applications.
               It is based on: 
