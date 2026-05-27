@@ -717,7 +717,118 @@ Step 9: Monitoring and Maintenance
                       Dynamic interfaces,Real-time updates,Better user experience,High performance
               That is why LWC is now the preferred UI framework in Salesforce. 
               
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------             
-              
-              
-           
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------  1.**Component communication**           
+        Component communication means how different components share data with each other in Salesforce Lightning Web Components (LWC).
+        There are mainly 3 ways:
+        _1. Parent to Child Communication_
+              Parent sends data to child component.
+               Uses @api decorator.     
+             Example
+            Parent HTML:
+              <c-child message="Hello Child"></c-child>
+           Child JS:
+              import { LightningElement, api } from 'lwc';
+              export default class Child extends LightningElement {
+              @api message;
+            }
+            Use Case
+             Passing account details
+             Sending form values
+             Sharing selected records
+      _2. Child to Parent Communication_
+            Child sends data to parent.
+            Uses Custom Events.
+           Example
+          Child JS:
+             handleClick() {
+             const event = new CustomEvent('save');
+             this.dispatchEvent(event);
+             }
+         Parent HTML:
+           <c-child onsave={handleSave}></c-child>   
+         Parent JS:
+          handleSave() {
+          console.log('Save button clicked');
+         }
+         Use Case
+         Notify parent after button click,
+         Submit forms,
+         Update dashboard data  
+      _3. Unrelated Component Communication_
+          Components without relationship communicate.
+         Uses:
+            Lightning Message Service (LMS)
+            Pub/Sub(publish/subscribe)
+         Use Case
+           Dashboard widgets
+           Notifications
+           Real-time updates   
+2.**Dashboard Design in LWC** 
+    A dashboard is a visual page showing important business information.
+          Example Dashboard Components
+           Header Component
+           Sales Chart Component
+           Customer List Component
+           Notifications Component
+           Footer Component
+    _ Dashboard Layout _                                                
+        
+        | Header                       |                                  Features:
+        --------------------------------
+        | Sales Chart | Customer List |                                   Responsive UI
+        --------------------------------                                  Real time data
+        | Notifications                |                                  Charts and graphs
+        --------------------------------                                  Record filtering
+        | Footer                       |                                  Quick navigation
+        -------------------------------- 
+3.**Data Flow Explanation**
+    Data flow means how information moves between frontend and backend.
+         Frontend
+         HTML
+         CSS
+         JavaScript
+         LWC Components
+    _Responsibilities_
+      User interface
+      Button clicks
+      Form inputs
+      Displaying records
+   _Backend_
+      Apex Classes
+      SOQL Queries
+      Database operations
+   _Responsibilities_
+      Fetch data
+      Validate data
+      Save records
+      Business logic
+ Data Flow Process:     
+         User Action
+             ↓
+         LWC Component
+             ↓
+          Apex Class
+             ↓
+         SOQL Query
+             ↓
+      Salesforce Database
+             ↓
+      Data Returned to LWC
+             ↓
+        Display on UI     
+4.**Aura vs LWC**:                                                                   5.**Why salesfore use LWC**
+    | Feature            | Aura Components     | LWC           |                         ->Better performance 
+    | ------------------ | ------------------- | ------------- |                         ->Faster loading
+    | Framework          | Older               | Modern        |                         ->Modern javascript support
+    | Performance        | Slower              | Faster        |                         ->Easy maintainance
+    | Programming Style  | Complex             | Simple        |                         ->Improved security
+    | Standards          | Salesforce-specific | Web Standards |                         ->Reusable components
+    | JavaScript Support | Limited             | Better        |
+    | Reusability        | Moderate            | High          |
+    | Learning Curve     | Harder              | Easier        |
+    | Event Handling     | Complex             | Simple        |
+    | Development Speed  | Slower              | Faster        |
+6.**Reflection**
+    Lightning Web Components help developers build fast, modern, and reusable enterprise applications in Salesforce. Component communication allows smooth data sharing between UI elements, while dashboards provide users with clear business insights. Compared to Aura, LWC is simpler, faster, and follows modern web standards, making Salesforce development more efficient and scalable.
+      
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------      
