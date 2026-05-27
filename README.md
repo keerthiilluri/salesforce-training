@@ -365,10 +365,10 @@ Phase 6:
 2.**What is an Apex Trigger?**
    An Apex Trigger is a piece of Apex code that automatically executes before or after events occur on Salesforce records.
     Triggers help automate custom business logic when records are:
-     ->Inserted
-     ->Updated
-     ->Deleted
-     ->Restored         
+         ->Inserted
+         ->Updated
+         ->Deleted
+         ->Restored         
     It is used to retrieve records from Salesforce objects, similar to how SQL is used in databases.
       SOQL helps developers fetch data from objects like Account, Contact, Opportunity, Case, etc.
     Example:
@@ -783,11 +783,11 @@ Step 9: Monitoring and Maintenance
         -------------------------------- 
 3.**Data Flow Explanation**
     Data flow means how information moves between frontend and backend.
-         Frontend
-         HTML
-         CSS
-         JavaScript
-         LWC Components
+     _Frontend_
+       HTML
+       CSS
+       JavaScript
+       LWC Components
     _Responsibilities_
       User interface
       Button clicks
@@ -831,4 +831,5 @@ Step 9: Monitoring and Maintenance
 6.**Reflection**
     Lightning Web Components help developers build fast, modern, and reusable enterprise applications in Salesforce. Component communication allows smooth data sharing between UI elements, while dashboards provide users with clear business insights. Compared to Aura, LWC is simpler, faster, and follows modern web standards, making Salesforce development more efficient and scalable.
       
------------------------------------------------------------------------------------------------------------------------------------------------------------------      
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------    Phase 10:
+  
